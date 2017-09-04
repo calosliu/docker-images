@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM alpine
 MAINTAINER Calos Liu <whulc@outlook.com>
 
 RUN apt-get update
