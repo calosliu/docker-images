@@ -2,11 +2,11 @@ FROM ubuntu
 MAINTAINER calos Liu <whulc@outlook.com>
 
 RUN apt-get update
-RUN apt-get -y update
-RUN apt-get install \
+RUN apt-get -y upgrade
+RUN apt-get -y install \
 	linux-image-extra-$(uname -r) \
 	linux-image-extra-virtual
-RUN apt-get install \
+RUN apt-get -y install \
 	apt-transport-https \
 	ca-certificates \
 	curl \
@@ -18,4 +18,4 @@ RUN add-apt-repository \
    $(lsb_release -cs) \
    stable"
 RUN apt-get update
-RUN apt-get install docker-ce
+RUN apt-get install -y docker-ce
