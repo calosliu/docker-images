@@ -23,5 +23,3 @@ RUN chown -R jenkins:jenkins /home/jenkins/.m2/
 RUN apt-get install -y maven
 
 EXPOSE 22
-
-CMD ["/usr/sbin/sshd", "-D"]
