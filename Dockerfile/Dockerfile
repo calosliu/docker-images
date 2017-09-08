@@ -15,12 +15,4 @@ RUN adduser --quiet jenkins
 
 RUN echo "jenkins:jenkins" | chpasswd
 
-RUN mkdir /home/jenkins/.m2
-
-ADD settings.xml /home/jenkins/.m2
-
-RUN chown -R jenkins:jenkins /home/jenkins/.m2/
-
-RUN apt-get install -y maven
-
 EXPOSE 22
