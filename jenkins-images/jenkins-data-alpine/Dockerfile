@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Calos Liu
 
-RUN addgroup -g 1000 -S jenkins && adduser -S -h "/var/jenins_home" -u 1000 -G jenkins -s /bin/sh jenkins
+RUN addgroup -g 1000 -S jenkins && adduser -S -h "/var/jenkins_home" -u 1000 -G jenkins -s /bin/sh jenkins
 
 RUN mkdir -p /var/log/jenkins
 RUN chown -R jenkins:jenkins /var/log/jenkins
