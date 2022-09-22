@@ -1,6 +1,6 @@
 FROM alpine:latest
-MAINTAINER Cong Liu <whulc@outlook.com>
-ENV MODIFIED_TIME 2018-10-18
+
+LABEL maintainer="Calos Liu"
 
 RUN apk update
 RUN apk add openjdk8-jre

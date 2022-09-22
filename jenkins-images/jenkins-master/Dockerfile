@@ -1,5 +1,6 @@
 FROM jenkins/jenkins:lts-slim
-MAINTAINER Calos Liu
+
+LABEL maintainer="Calos Liu"
 
 USER root
 RUN mkdir /var/log/jenkins

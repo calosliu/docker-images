@@ -1,5 +1,6 @@
 FROM alpine:latest
-MAINTAINER Calos Liu
+
+LABEL maintainer="Calos Liu"
 
 RUN addgroup -g 1000 -S jenkins && adduser -S -h "/var/jenkins_home" -u 1000 -G jenkins -s /bin/sh jenkins
 

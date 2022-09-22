@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
-MAINTAINER Cong Liu <whulc@outlook.com>
-ENV MODIFIED_TIME 2018-10-18
+
+LABEL maintainer="Calos Liu"
 
 RUN apt -y update
 RUN apt -y install curl unzip

@@ -1,5 +1,6 @@
 FROM whulc/java-slave
-MAINTAINER Calos Liu <whulc@outlook.com>
+
+LABEL maintainer="Calos Liu"
 
 RUN apt-get update
 

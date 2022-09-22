@@ -1,5 +1,6 @@
 FROM ubuntu
-MAINTAINER Calos Liu <whulc@outlook.com>
+
+LABEL maintainer="Calos Liu"
 
 RUN apt-get update
 RUN apt-get -y upgrade
